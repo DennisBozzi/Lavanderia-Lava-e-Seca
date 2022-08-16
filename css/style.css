@@ -68,19 +68,6 @@ html {
   transform: scale(1.1);
 }
 
-@media screen and (max-width:1034px){
-  .section-header {
-    position: relative;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .fale-conosco {
-    margin: 0;
-  }
-}
 /*----------------------------------------------------------------Sobre--------------------------------------------------------------------*/
 
 .svg-sobre {
@@ -129,19 +116,6 @@ html {
 
 .div-sobre p {
   padding-bottom: 10px;
-}
-@media screen and (max-width:1034px){
-  .section-sobre {
-    padding-top: 0px;
-  }
-
-}
-@media screen and (max-width:768px){
-    .div-sobre {
-    width: 100%;
-    padding: 10px;
-  }
-
 }
 
 /*----------------------------------------------------------------Servicos-----------------------------------------------------------------*/
@@ -222,29 +196,7 @@ html {
   background-color: white;
 }
 
-@media screen and (max-width:768px) {
-  .section-servicos {
-    padding: 60px 0;
-  }
-  
-  .div-servicos {
-    flex-wrap: wrap;
-    padding: 5px;
-    display: flex;
-  }
 
-  .div-cesto {
-    width: auto;
-    padding: 20px;
-    margin: 0 0 30px;
-  }
-
-  .div-peca {
-    width: auto;
-    padding: 20px;
-  }
-  
-}
 /*----------------------------------------------------------------Valores------------------------------------------------------------------*/
 
 .svg-valores {
@@ -360,31 +312,7 @@ html {
   width: 50%;
 }
 
-@media screen and (max-width:768px) {
-  .div-delivery {
-    display: flex;
-    flex-direction: column;
-  }
-  .motinha {
-    width: 50%;
-  }
 
-  .box-delivery {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .motinha {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width:480px) {
-  .motinha {
-    width: 100%;
-}
-}
 
 /*----------------------------------------------------------------Accordion----------------------------------------------------------------*/
 
@@ -477,16 +405,6 @@ html {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width:450px) {
-    .bg-svg-2 {
-      height: 25px;
-    }
-
-    .bg-svg-3 {
-      height: 25px;
-    }
-}
-
 /*----------------------------------------------------------------Missao----------------------------------------------------------------*/
 
 .section-missao {
@@ -529,15 +447,6 @@ html {
   border-radius: 15px;
   background-color: white;
   color: #38536b;
-}
-
-@media screen and (max-width: 950px) {
-  .div-missao, .div-visao, .div-valores {
-    width: auto;
-    margin: 15px;
-  }
-
-
 }
 
 /*----------------------------------------------------------------Contatos-----------------------------------------------------------------*/
@@ -652,48 +561,6 @@ html {
   border-radius: 30%;
 }
 
-@media screen and (max-width:768px) {
-  .section-contatos {
-    padding: 50px 0px;
-  }
-
-  .div-contatos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .div-informacoes {
-    width: auto;
-    text-align: center;
-    padding: 15px 0px;
-  }
-
-  .div-map {
-    width: auto;
-    padding: 15px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .icones-redes {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width:480px) {
-  .mapinha {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .mapinha {
-    width: 250px;
-  }
-}
-
 /*----------------------------------------------------------------Footer-----------------------------------------------------------------*/
 
 .bg-svg-1 {
@@ -746,4 +613,168 @@ html {
   transform: scale(1.1);
   background-color: #b4b4b4;
   border-radius: 30%;
+}
+
+/*----------------------------------------------------------------Flutuantes-----------------------------------------------------------------*/
+
+.flutuantee {
+  width: 55px;
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  transition: 0.2s;
+  z-index: 3;
+  fill: #5fbb50;
+  transition: 0.2s;
+}
+
+.flutuantee:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.flutuante {
+  width: 60px;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 3;
+  transition: 0.2s;
+  fill: #1484c2;
+}
+
+.flutuante:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+/*----------------------------------------------------------------Medias-----------------------------------------------------------------*/
+
+@media screen and (max-width:768px) {
+  .section-contatos {
+    padding: 50px 0px;
+  }
+
+  .flutuante {
+    display: none;
+  }
+
+  .div-contatos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-informacoes {
+    width: auto;
+    text-align: center;
+    padding: 15px 0px;
+  }
+
+  .div-map {
+    width: auto;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .icones-redes {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-delivery {
+    display: flex;
+    flex-direction: column;
+  }
+  .motinha {
+    width: 50%;
+  }
+
+  .box-delivery {
+    width: 90%;
+  }
+
+  .section-servicos {
+    padding: 60px 0;
+  }
+  
+  .div-servicos {
+    flex-wrap: wrap;
+    padding: 5px;
+    display: flex;
+  }
+
+  .div-cesto {
+    width: auto;
+    padding: 20px;
+    margin: 0 0 30px;
+  }
+
+  .div-peca {
+    width: auto;
+    padding: 20px;
+  }
+
+  .div-sobre {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .mapinha {
+    width: 350px;
+  }
+
+  .motinha {
+    width: 100%;
+  }
+
+  .bg-svg-2 {
+    height: 25px;
+  }
+
+  .bg-svg-3 {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .mapinha {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .div-missao, .div-visao, .div-valores {
+    width: auto;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width:1034px){
+  .section-header {
+    position: relative;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .fale-conosco {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .motinha {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:1034px){
+  .section-sobre {
+    padding-top: 0px;
+  }
 }
