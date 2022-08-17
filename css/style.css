@@ -318,23 +318,25 @@ html {
 
 .bg-svg-3 {
   height: 50px;
-  display: flex;
   width: 100%;
   fill: #226aa6;
   transform: rotate(180deg);
+  position: relative;
+  top: 7px;
 }
 
 .bg-svg-2 {
   margin-top: 150px;
-  background-color: #e6e6e8;
+  background-color: #226aa6;
   height: 50px;
-  display: flex;
   width: 100%;
-  fill: #226aa6;
+  fill: #e6e6e8;
+  position: relative;
+  transform: rotate(180deg);
 }
 
 .accordion {
-  padding: 100px 0px 0px;
+  padding: 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -345,6 +347,7 @@ html {
 }
 
 .accordion h1 {
+  margin-top: 100px;
   font-size: 30px;
   color: white;
   padding-bottom: 70px;
@@ -565,6 +568,8 @@ html {
 
 .bg-svg-1 {
   fill: #e6e6e8;
+  position: relative;
+  bottom: 1px;
 }
 
 .section-footer {
@@ -640,7 +645,7 @@ html {
   right: 3%;
   z-index: 3;
   transition: 0.2s;
-  fill: #1484c2;
+  fill: #05a3e3;
 }
 
 .flutuante:hover {
@@ -737,8 +742,13 @@ html {
 
   .bg-svg-3 {
     height: 25px;
+    display: flex;
+    width: 100%;
+    fill: #226aa6;
+    transform: rotate(180deg);
   }
 }
+
 
 @media screen and (max-width:400px) {
   .mapinha {
