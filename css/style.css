@@ -12,6 +12,83 @@ html {
 }
 
 /*----------------------------------------------------------------Header----------------------------------------------------------------*/
+/* -----------Menu lateral-----------*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#menuimg {
+  display: none;
+  width: 50px;
+  position: absolute;
+  z-index: 2;
+  top: 11px;
+  left: 11px;
+  padding: 4px;
+  border-radius: 30px;
+}
+
+#menuimg:active {
+  background-color: white;
+}
+
+input[type="checkbox"]:checked~.nav-lateral {
+  left: 0px;
+  background-color: #91c0bf;
+}
+
+input[type="checkbox"]:checked~body {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.nav-lateral {
+  display: flex;
+  border-bottom: 3px solid #5fbb50;
+  border-radius: 0 0 15px 15px;
+  top: 0px;
+  z-index: 1;
+  background-color: #05a3e3;
+  width: 100%;
+  position: absolute;
+  height: 500px;
+  left: -100%;
+  transition: .5s;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ul-lateral {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.menu-lateral {
+  text-align: center;
+  border-radius: 15px;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  padding: 15px;
+  width: 300px;
+  text-decoration: none;
+  color: white;
+  justify-content: space-around;
+}
+
+.menu-lateral:hover {
+  background-color: #5fbb50;
+}
+
+:target {
+  scroll-margin-top: 100px;
+}
+
+/*-----------Cabecalho-----------*/
 
 .section-header {
   z-index: 3;
@@ -37,9 +114,10 @@ html {
   flex-wrap: wrap;
   position: relative;
   bottom: 2px;
+  justify-content: space-around;
 }
 
-.link{
+.link {
   margin: 5px 15px 0;
   text-decoration: none;
   color: black;
@@ -56,12 +134,12 @@ html {
   transition: 0.2s;
   border-radius: 15px;
   background-color: #5fbb50;
-  margin:0px 0 0px 50px;
+  margin: 0px 0 0px 50px;
   padding: 5px 10px;
 }
 
 .fale-conosco a {
-  color: white;  
+  color: white;
 }
 
 .fale-conosco:hover {
@@ -78,13 +156,13 @@ html {
 .section-sobre {
   padding-top: 50px;
   width: 100%;
-  background-image: url(../imagens/rafaelacabisuda.jpeg);
-  background-position: center bottom;
+  background-image: url(../imagens/teste30.jpg);
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .3);
 }
 
 .div-total {
@@ -94,11 +172,13 @@ html {
 }
 
 .div-sobre {
-  width: 55%;
+  text-align: justify;
+  /* width: 55%; */
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 50px;  
+  padding: 70px 50px;
   padding-top: 50px;
+  justify-content: center;
 }
 
 .div-sobre h1 {
@@ -152,11 +232,11 @@ html {
   padding: 30px;
   border-radius: 15px;
   border: 1px solid #1484c2;
-  background-image: url(../imagens/basket4.jpg);
+  background-image: url(../imagens/backwhite.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .1);
   background-size: cover;
   transition: 0.2s;
 }
@@ -170,29 +250,32 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .1);
   background-size: cover;
   transition: 0.2s;
 }
 
 .div-hover-cesto {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 10px;
   transition: 0.2s;
 }
 
 .div-hover-peca {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 10px;
   transition: 0.2s;
 }
 
-.div-cesto:hover, .div-peca:hover {
+.div-cesto:hover,
+.div-peca:hover {
   background-color: rgba(255, 255, 255, .2);
 }
-.div-hover-cesto:hover, .div-hover-peca:hover {
+
+.div-hover-cesto:hover,
+.div-hover-peca:hover {
   background-color: white;
 }
 
@@ -210,14 +293,14 @@ html {
   background-blend-mode: lighten;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
-  background-color: rgba(255, 255, 255, .5);
+  background-position: center left;
+  background-color: rgba(255, 255, 255, .3);
 }
 
 .div-valortotal {
   padding: 80px 0px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -231,6 +314,7 @@ html {
 .div-valorpeca {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .div-minivalor2 {
@@ -255,24 +339,20 @@ html {
 }
 
 .div-valortotal h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   color: #1484c2;
 }
 
 .div-valortotal h4 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   color: #1484c2;
   position: relative;
   bottom: 5px;
 }
 
-.div-valortotal p{
-  display: flex;
-  align-items: center;
-}
-.div-valortotal p:before{
+.div-valortotal p:before {
   position: relative;
   right: 5px;
   font-family: 'Font Awesome 5 Free';
@@ -304,7 +384,7 @@ html {
 }
 
 .box-delivery {
-  width:50%;
+  width: 50%;
 }
 
 .motinha {
@@ -399,7 +479,8 @@ html {
   padding-bottom: 10px;
 }
 
-.accordion span, .icon {
+.accordion span,
+.icon {
   font-weight: 600;
 }
 
@@ -516,7 +597,7 @@ html {
   content: "\f3c5";
 }
 
-.contato-p1::before{
+.contato-p1::before {
   position: relative;
   right: 5px;
   font-family: 'Font Awesome 5 Free';
@@ -532,7 +613,7 @@ html {
   content: "\f658";
 }
 
-.horario p::before{
+.horario p::before {
   position: relative;
   right: 5px;
   font-family: 'Font Awesome 5 Free';
@@ -548,7 +629,7 @@ html {
   padding-top: 10px;
   display: flex;
   justify-content: flex-end;
-  
+
 }
 
 .icones-redes a {
@@ -573,9 +654,11 @@ html {
 }
 
 .section-footer {
+  display: flex;
   width: 100%;
   text-align: center;
   font-weight: 500;
+  flex-direction: column;
 }
 
 .div-menu-footer {
@@ -587,8 +670,8 @@ html {
 }
 
 .politica {
-  margin: 10px 0px; 
-  text-decoration: none; 
+  margin: 10px 0px;
+  text-decoration: none;
   color: black;
   transition: 0.2s;
 }
@@ -614,6 +697,7 @@ html {
   justify-content: center;
   align-content: center;
 }
+
 .div-footer a:hover {
   transform: scale(1.1);
   background-color: #b4b4b4;
@@ -655,9 +739,43 @@ html {
 
 /*----------------------------------------------------------------Medias-----------------------------------------------------------------*/
 
+@media screen and (max-width:1034px) {
+  .logo {
+    margin: 0;
+  }
+
+  .section-header {
+    position: fixed;
+    top: 0px;
+  }
+
+  .section-sobre {
+    margin-top: 100px;
+    padding-top: 0px;
+    position: relative;
+  }
+
+  .fale-conosco {
+    margin: 0;
+  }
+
+  .box-delivery {
+    margin-left: 15px;
+  }
+}
+
 @media screen and (max-width:768px) {
   .section-contatos {
     padding: 50px 0px;
+  }
+
+  .section-sobre {
+    margin: 0;
+    top: 150px;
+  }
+
+  .box-delivery {
+    margin-left: 0px;
   }
 
   .flutuante {
@@ -692,6 +810,7 @@ html {
     display: flex;
     flex-direction: column;
   }
+
   .motinha {
     width: 50%;
   }
@@ -701,9 +820,9 @@ html {
   }
 
   .section-servicos {
-    padding: 60px 0;
+    margin-top: 100px;
   }
-  
+
   .div-servicos {
     flex-wrap: wrap;
     padding: 5px;
@@ -725,9 +844,21 @@ html {
     width: 100%;
     padding: 10px;
   }
+
+}
+
+@media screen and (max-width:676px) {
+  .section-sobre {
+    top: 170px;
+  }
 }
 
 @media screen and (max-width:480px) {
+
+  .flutuantee {
+    display: none;
+  }
+
   .mapinha {
     width: 350px;
   }
@@ -742,10 +873,39 @@ html {
 
   .bg-svg-3 {
     height: 25px;
-    display: flex;
     width: 100%;
     fill: #226aa6;
     transform: rotate(180deg);
+  }
+
+  .div-menu {
+    display: none;
+  }
+
+  .div-menu-footer {
+    display: none;
+  }
+
+  .section-sobre {
+    margin-top: 0px;
+    top: 130px;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fale-conosco {
+    margin-top: 10px;
+  }
+
+  #menuimg {
+    display: block;
+  }
+
+  .section-sobre {
+    background-image: url(../imagens/teste27.jpg);
   }
 }
 
@@ -757,34 +917,17 @@ html {
 }
 
 @media screen and (max-width: 950px) {
-  .div-missao, .div-visao, .div-valores {
+
+  .div-missao,
+  .div-visao,
+  .div-valores {
     width: auto;
     margin: 15px;
-  }
-}
-
-@media screen and (max-width:1034px){
-  .section-header {
-    position: relative;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .fale-conosco {
-    margin: 0;
   }
 }
 
 @media screen and (max-width:600px) {
   .motinha {
     width: 70%;
-  }
-}
-
-@media screen and (max-width:1034px){
-  .section-sobre {
-    padding-top: 0px;
   }
 }

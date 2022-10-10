@@ -14,7 +14,7 @@
 
   <!--Font-Icons-->
   <script src="https://kit.fontawesome.com/59d348fb44.js" crossorigin="anonymous"></script>
-  
+
   <!--Icones-Ionicons-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -26,7 +26,41 @@
 
   <!--Section-Header-->
   <header>
+
+
     <section class="section-header">
+
+      <!--Menu lateral-->
+
+      <section>
+        <input type="checkbox" id="checkmenu">
+        <label for="checkmenu"><img src="imagens/menu2.png" alt="" id="menuimg"></label>
+        <nav class="nav-lateral">
+          <img src="imagens/Lava e Seca logo.png" alt="" width="80px" class="logo-lateral" style="margin-top: 10px;">
+          <div class="fale-conosco">
+
+            <a href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+              class="link"><svg style="position: relative; top:3px; right:5px;" xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+              </svg>FALE CONOSCO</a>
+    
+          </div>
+          <ul class="ul-lateral">
+
+            <input type="checkbox" id="checkmenu">
+            <li><a href="#nav-sobre" class="menu-lateral menu-1" style="margin-top: 10px;">SOBRE NÓS</a></li>
+            <li><a href="#nav-servicos" class="menu-lateral menu-2">NOSSOS SERVIÇOS</a></li>
+            <li><a href="#nav-valores" class="menu-lateral menu-3">VALORES</a></li>
+            <li><a href="#nav-delivery" class="menu-lateral menu-4">DELIVERY</a></li>
+            <li><a href="#nav-accordion" class="menu-lateral menu-5">FAQ</a></li>
+            <li><a href="#nav-contatos" class="menu-lateral menu-6">CONTATOS</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Cabecalho -->
 
       <a href="https://www.lavanderialavaeseca.com.br/"><img src="imagens/Lava e Seca logo.png" alt="" class="logo"></a>
 
@@ -38,14 +72,17 @@
         <a href="#nav-delivery" class="link">DELIVERY</a>
         <a href="#nav-accordion" class="link">FAQ</a>
         <a href="#nav-contatos" class="link">CONTATOS</a>
-        
+
       </div>
 
       <div class="fale-conosco">
 
-        <a href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="link"><svg style="position: relative; top:3px; right:5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>FALE CONOSCO</a>
+        <a href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+          class="link"><svg style="position: relative; top:3px; right:5px;" xmlns="http://www.w3.org/2000/svg"
+            width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+          </svg>FALE CONOSCO</a>
 
       </div>
 
@@ -57,17 +94,27 @@
 
     <!--Wpp-Icon-->
     <div class="icon-flutuante">
-      <a href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg xmlns="http://www.w3.org/2000/svg" class="flutuantee"  viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
-      <a href="#nav-sobre"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="flutuante"><path d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z" fill-rule="nonzero"/></svg></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg
+          xmlns="http://www.w3.org/2000/svg" class="flutuantee" viewBox="0 0 24 24">
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg></a>
+      <a href="#nav-sobre"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="flutuante">
+          <path
+            d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z"
+            fill-rule="nonzero" />
+        </svg></a>
     </div>
 
-    <!--Section-Sobre--> <p id="nav-sobre"></p>
+    <!--Section-Sobre-->
+    <p id="nav-sobre"></p>
     <section class="section-sobre">
 
       <svg xmlns="http://www.w3.org/2000/svg" class="svg-sobre" viewBox="0 0 1251 84.406">
         <path id="Retangulo_1" data-name="Retangulo 1" class="cls-1" d="M58,
-        384H1309v55s-321.707,66.18-622.008,0C345.939,363.839,58,439,58,439V384Z"
-        transform="translate(-58 -384)"/>
+        384H1309v55s-321.707,66.18-622.008,0C345.939,363.839,58,439,58,439V384Z" transform="translate(-58 -384)" />
       </svg>
 
       <div class="div-total">
@@ -77,9 +124,12 @@
 
           <h2>Lavar roupa nunca foi tão fácil!</h2>
 
-          <p>Aqui você encontra um serviço <span style="font-weight: 500; color: #05a3e3;">prático, rápido, econômico e de qualidade</span>. Com menos de uma hora e meia você tem roupas limpas e prontas para serem usadas.</p>
+          <p>Aqui você encontra um serviço <span style="font-weight: 500; color: #1484c2;">prático, rápido, econômico e
+              de qualidade</span>. Com menos de uma hora e meia você tem roupas limpas e prontas para serem usadas.</p>
 
-          <p><span style="font-weight: 500; color: #5fbb50;">Fale Agora</span> com um de nossos atendentes e venha conhecer nossos serviços, <span style="font-weight: 500; color: #5fbb50;">garantimos o melhor para suas roupas!</span></p>
+          <p><span style="font-weight: 500; color: #5fbb50;">Fale Agora</span> com um de nossos atendentes e venha
+            conhecer nossos serviços, <span style="font-weight: 500; color: #5fbb50;">garantimos o melhor para suas
+              roupas!</span></p>
 
         </div>
 
@@ -87,38 +137,46 @@
 
     </section>
 
-    <!--Section-Servicos--> <p id="nav-servicos"></p>
+    <!--Section-Servicos-->
+    <p id="nav-servicos"></p>
     <section class="section-servicos">
-    
+
       <h1>Nossos Serviços</h1>
 
       <div class="div-servicos">
-        
+
         <div class="div-cesto">
           <div class="div-hover-cesto">
             <h2>Lavagem por Cesto</h2>
-            <p>Somos uma lavanderia de <span style="color: #05a3e3; font-weight: 600;">Self-Service</span> onde você mesmo(a) pode lavar e secar suas roupas. Basta adquirir as <span style="color: #5fbb50; font-weight: 600;">fichas</span> e em <span style="color: #5fbb50; font-weight: 600;">cerca de 70min</span> você terá roupas limpas e prontas para serem usadas.</p>
+            <p>Somos uma lavanderia de <span style="color: #05a3e3; font-weight: 600;">Self-Service</span> onde você
+              mesmo(a) pode lavar e secar suas roupas. Basta adquirir as <span
+                style="color: #5fbb50; font-weight: 600;">fichas</span> e em <span
+                style="color: #5fbb50; font-weight: 600;">cerca de 70min</span> você terá roupas limpas e prontas para
+              serem usadas.</p>
           </div>
         </div>
 
         <div class="div-peca">
           <div class="div-hover-peca">
             <h2>Lavagem por Peça</h2>
-            <p>A lavagem por peça é apenas para <span style="color: #05a3e3; font-weight: 600;">Peças Maiores</span> como: <span style="color: #5fbb50; font-weight: 600;">edredom, cortina, tapete, etc.</span>  Nesse caso, você deixa sua peça para <span style="color: #5fbb50; font-weight: 600;">ser lavada no estabelecimento</span> e busca no prazo combinado.</p>
+            <p>A lavagem por peça é apenas para <span style="color: #05a3e3; font-weight: 600;">Peças Maiores</span>
+              como: <span style="color: #5fbb50; font-weight: 600;">edredom, cortina, tapete, etc.</span> Nesse caso,
+              você deixa sua peça para <span style="color: #5fbb50; font-weight: 600;">ser lavada no
+                estabelecimento</span> e busca no prazo combinado.</p>
           </div>
         </div>
 
       </div>
 
     </section>
-    
-    <!--Section-Valores-->  <p id="nav-valores"></p>
+
+    <!--Section-Valores-->
+    <p id="nav-valores"></p>
     <section class="section-valores">
 
       <svg xmlns="http://www.w3.org/2000/svg" class="svg-valores" viewBox="0 0 1251 84.406">
         <path id="Retangulo_1" data-name="Retangulo 1" class="cls-1" d="M58,
-        384H1309v55s-321.707,66.18-622.008,0C345.939,363.839,58,439,58,439V384Z"
-        transform="translate(-58 -384)"/>
+        384H1309v55s-321.707,66.18-622.008,0C345.939,363.839,58,439,58,439V384Z" transform="translate(-58 -384)" />
       </svg>
 
       <div class="div-valortotal">
@@ -132,9 +190,9 @@
         <div class="div-valorcesto">
 
           <div class="div-minivalor2">
-            <p>Ficha para Lavar: R$17,00</p>
-            <p>Ficha para Secar: R$20,00 </p>
-            <p>Fichas Lavar e Secar: R$34,00 </p>            
+            <p>Ficha para Lavar R$17,00</p>
+            <p>Ficha para Secar R$20,00 </p>
+            <p>Fichas Lavar e Secar R$34,00 </p>
           </div>
 
         </div>
@@ -145,50 +203,50 @@
 
           <div class="div-minivalor">
             <h3 class="subtitulos">Cobertor</h3>
-            <p>Solteiro: R$29,00</p>
-            <p>Casal: R$43,00</p>
-            <p>Queen: R$37,00</p>
-            <p>King: R$39,00</p>            
+            <p>Solteiro R$29,00</p>
+            <p>Casal R$43,00</p>
+            <p>Queen R$37,00</p>
+            <p>King R$39,00</p>
           </div>
 
           <div class="div-minivalor">
             <h3 class="subtitulos">Cobre Leito</h3>
-            <p>Solteiro: R$32,00</p>
-            <p>Casal: R$37,00</p>
-            <p>Queen: R$39,00</p>
-            <p>King: R$42,00</p>
+            <p>Solteiro R$32,00</p>
+            <p>Casal R$37,00</p>
+            <p>Queen R$39,00</p>
+            <p>King R$42,00</p>
           </div>
 
           <div class="div-minivalor">
             <h3 class="subtitulos">Colcha</h3>
-            <p>Solteiro: R$24,00</p>
-            <p>Casal: R$29,00</p>
-            <p>Queen: R$32,00</p>
-            <p>King: R$34,00</p>
+            <p>Solteiro R$24,00</p>
+            <p>Casal R$29,00</p>
+            <p>Queen R$32,00</p>
+            <p>King R$34,00</p>
           </div>
 
           <div class="div-minivalor">
             <h3 class="subtitulos">Edredom</h3>
-            <p>Solteiro: R$34,00</p>
-            <p>Casal: R$39,00</p>
-            <p>Queen: R$42,00</p>
-            <p>King: R$44,00</p>
+            <p>Solteiro R$34,00</p>
+            <p>Casal R$39,00</p>
+            <p>Queen R$42,00</p>
+            <p>King R$44,00</p>
           </div>
-          
+
           <div class="div-minivalor">
             <h3 class="subtitulos">Manta</h3>
-            <p>Solteiro: R$27,00</p>
-            <p>Casal: R$29,00</p>
-            <p>Queen: R$32,00</p>
-            <p>King: R$37,00</p>
+            <p>Solteiro R$27,00</p>
+            <p>Casal R$29,00</p>
+            <p>Queen R$32,00</p>
+            <p>King R$37,00</p>
           </div>
 
           <div class="div-minivalor">
             <h3 class="subtitulos">Outros</h3>
-            <p>Rede: R$29,00</p>
-            <p>Tapete: R$42,00 o m²</p>
-            <p>Cortina M: R$54,00</p>
-            <p>Cortina G: R$104,00</p>
+            <p>Rede R$29,00</p>
+            <p>Tapete R$42,00 o m²</p>
+            <p>Cortina M R$54,00</p>
+            <p>Cortina G R$104,00</p>
           </div>
 
         </div>
@@ -197,25 +255,29 @@
 
     </section>
 
-    <!--Section-Delivery--> <p id="nav-delivery"></p>
+    <!--Section-Delivery-->
+    <p id="nav-delivery"></p>
     <section class="section-delivery">
 
-        <div class="div-delivery">
+      <div class="div-delivery">
 
-            <div class="box-delivery">
-              <h1>Delivery</h1>
-              <p>Pensando na comodidade dos nossos clientes, nossa lavanderia conta com um <span style="color: #05a3e3; font-weight: 600;">sistema de coleta 
-                e entrega</span> das suas roupas. Para solicitar esse serviço, <span style="color: #5fbb50; font-weight: 600;">basta entrar em contato conosco</span> e 
-                verificar a <span style="color: #05a3e3; font-weight: 600;">taxa cobrada</span> em sua localidade.</p>
-            </div>
-
-            <img src="imagens/motinha.png" alt="" class="motinha">
-
+        <div class="box-delivery">
+          <h1>Delivery</h1>
+          <p>Pensando na comodidade dos nossos clientes, nossa lavanderia conta com um <span
+              style="color: #05a3e3; font-weight: 600;">sistema de coleta
+              e entrega</span> das suas roupas. Para solicitar esse serviço, <span
+              style="color: #5fbb50; font-weight: 600;">basta entrar em contato conosco</span> e
+            verificar a <span style="color: #05a3e3; font-weight: 600;">taxa cobrada</span> em sua localidade.</p>
         </div>
-      
+
+        <img src="imagens/motinha.png" alt="" class="motinha">
+
+      </div>
+
     </section>
 
-    <!--Section-Accordion-->  <p id="nav-accordion"></p>
+    <!--Section-Accordion-->
+    <p id="nav-accordion"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="bg-svg-3">
       <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
       c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
@@ -234,16 +296,19 @@
             <div class="accordion_header">
               <span>
                 Como funciona o modelo Self-Service?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Consagradas nos Estados Unidos e Europa por sua praticidade e economia, as lavanderias de auto atendimento (self-service) são a melhor forma de obter uma lavagem de qualidade 
-                para as suas roupas, de forma rápida e eficiente. E ainda, a secagem elimina a necessidade de passadoria em boa parte das roupas, é só tirar da secadora, dobrar e levar. Primeiro 
-                você insere a ficha na máquina e lava por 30 min, depois em outra máquina o mesmo procedimento para secar por mais 40 min, e pronto! Roupas Limpas e cheirosas.
+                Consagradas nos Estados Unidos e Europa por sua praticidade e economia, as lavanderias de auto
+                atendimento (self-service) são a melhor forma de obter uma lavagem de qualidade
+                para as suas roupas, de forma rápida e eficiente. E ainda, a secagem elimina a necessidade de passadoria
+                em boa parte das roupas, é só tirar da secadora, dobrar e levar. Primeiro
+                você insere a ficha na máquina e lava por 30 min, depois em outra máquina o mesmo procedimento para
+                secar por mais 40 min, e pronto! Roupas Limpas e cheirosas.
               </p>
             </div>
           </div>
@@ -252,14 +317,15 @@
             <div class="accordion_header">
               <span>
                 Que tipos de produtos de limpeza são utilizados na lavagem de roupas?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Nossa lavanderia utiliza os melhores Detergentes e Amaciantes disponíveis no mercado nacional e internacional.
+                Nossa lavanderia utiliza os melhores Detergentes e Amaciantes disponíveis no mercado nacional e
+                internacional.
             </div>
           </div>
 
@@ -267,14 +333,16 @@
             <div class="accordion_header">
               <span>
                 Posso utilizar meu próprio produto de limpeza?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Sim, apesar de que nossas maquinas já alimentam o próprio detergente e amaciante para a quantidade de roupas do nosso CESTO PADRÃO. Lembre-se: Se você quiser trazer o seu próprio produto, TEM QUE SER DE FORMA LIQUIDA.
+                Sim, apesar de que nossas maquinas já alimentam o próprio detergente e amaciante para a quantidade de
+                roupas do nosso CESTO PADRÃO. Lembre-se: Se você quiser trazer o seu próprio produto, TEM QUE SER DE
+                FORMA LIQUIDA.
               </p>
             </div>
           </div>
@@ -283,14 +351,18 @@
             <div class="accordion_header">
               <span>
                 As roupas são entregues dobradas na lavagem Self-Service?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Não, no serviço self-service você mesmo dobra suas roupas. No entanto, você poderá optar em comprar um “ATENDIMENTO” que é um serviço exclusivo para atender o cliente que não quer ficar aguardando na loja o termino da lavagem e posterior secagem das roupas. Esse valor contempla: inserir as roupas na lavadora e ao final da lavagem, inserir as roupas na secadora e ao termino da secagem, as roupas serão dobradas e acondicionadas em sacolas e embalagens apropriadas.
+                Não, no serviço self-service você mesmo dobra suas roupas. No entanto, você poderá optar em comprar um
+                “ATENDIMENTO” que é um serviço exclusivo para atender o cliente que não quer ficar aguardando na loja o
+                termino da lavagem e posterior secagem das roupas. Esse valor contempla: inserir as roupas na lavadora e
+                ao final da lavagem, inserir as roupas na secadora e ao termino da secagem, as roupas serão dobradas e
+                acondicionadas em sacolas e embalagens apropriadas.
               </p>
             </div>
           </div>
@@ -299,14 +371,15 @@
             <div class="accordion_header">
               <span>
                 No processo Self-Service as roupas saem prontas para o uso?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Na maioria dos casos, pode-se utilizar suas peças sem a necessidade da passadoria, para isso, deve-se dobrar as peças logo após a secagem das mesmas.
+                Na maioria dos casos, pode-se utilizar suas peças sem a necessidade da passadoria, para isso, deve-se
+                dobrar as peças logo após a secagem das mesmas.
               </p>
             </div>
           </div>
@@ -315,14 +388,16 @@
             <div class="accordion_header">
               <span>
                 Quais tipos de peças podem ser lavadas e quais não podem no sistema self-service?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
-                <p>Podem ser lavadas: Roupas do Dia a Dia, exemplo: Camisa, Blusas, Calça Jeans, Bermudas, Camisetas, Roupa infantil, Etc.</p>            
-                <p>Não devem ser lavadas no Self-Service: Roupas delicadas, Ternos, Paletós, Vestidos de festa, edredons, etc.</p>
+              <p>Podem ser lavadas: Roupas do Dia a Dia, exemplo: Camisa, Blusas, Calça Jeans, Bermudas, Camisetas,
+                Roupa infantil, Etc.</p>
+              <p>Não devem ser lavadas no Self-Service: Roupas delicadas, Ternos, Paletós, Vestidos de festa, edredons,
+                etc.</p>
             </div>
           </div>
 
@@ -330,15 +405,20 @@
             <div class="accordion_header">
               <span>
                 Quais recomendações de uso do self-service devo seguir?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
-              <p>Para que o seu processo de lavagem e secagem seja super eficaz você deverá observar e seguir nossas orientações com relação a quantidade máxima de peças, separação por tipo de peças, cor das peças. Observar se o tecido irá suportar o calor no ciclo da secadora.</p>
-              <p>Utilize o cesto-medida da loja de maneira correta: média 20 peças de uso pessoal (Calça, Camisa, Bermuda, etc.). Se no cesto conter: lençol c/ ou s/ elástico, caberá um pouco menos. Sempre obedecendo a capacidade do CESTO PADRÃO.</p>
-              <p>Na hora da secagem, estabeleça uma temperatura e verifique as roupas a cada 15 minutos na secadora. Nunca ultrapasse o limite do cesto-medida. Suas peças podem não ter uma lavagem desejada.</p>
+              <p>Para que o seu processo de lavagem e secagem seja super eficaz você deverá observar e seguir nossas
+                orientações com relação a quantidade máxima de peças, separação por tipo de peças, cor das peças.
+                Observar se o tecido irá suportar o calor no ciclo da secadora.</p>
+              <p>Utilize o cesto-medida da loja de maneira correta: média 20 peças de uso pessoal (Calça, Camisa,
+                Bermuda, etc.). Se no cesto conter: lençol c/ ou s/ elástico, caberá um pouco menos. Sempre obedecendo a
+                capacidade do CESTO PADRÃO.</p>
+              <p>Na hora da secagem, estabeleça uma temperatura e verifique as roupas a cada 15 minutos na secadora.
+                Nunca ultrapasse o limite do cesto-medida. Suas peças podem não ter uma lavagem desejada.</p>
             </div>
           </div>
 
@@ -346,14 +426,17 @@
             <div class="accordion_header">
               <span>
                 Mesmo com lavadora em casa, compensa usar uma lavanderia self-service?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Sim, Mas depende das suas necessidades.  A Lavanderia poderá oferecer a você ótima qualidade nos serviços, eficiência, conforto e o mais importante, você poderá usar o seu tempo livre para fazer outras atividades pois terá muito mais tempo livre para isso. Você estará economizando TEMPO e DINHEIRO, além de que estará ajudando a natureza na sustentabilidade do meio ambiente.
+                Sim, Mas depende das suas necessidades. A Lavanderia poderá oferecer a você ótima qualidade nos
+                serviços, eficiência, conforto e o mais importante, você poderá usar o seu tempo livre para fazer outras
+                atividades pois terá muito mais tempo livre para isso. Você estará economizando TEMPO e DINHEIRO, além
+                de que estará ajudando a natureza na sustentabilidade do meio ambiente.
               </p>
             </div>
           </div>
@@ -362,14 +445,16 @@
             <div class="accordion_header">
               <span>
                 Organizar minhas peças de roupas suas em casa antes de ir a lavanderia agiliza o processo?
-              </span> 
+              </span>
               <div class="icon">
                 +
               </div>
             </div>
             <div class="accordion_content">
               <p>
-                Sim, Lembre-se de organizar as suas roupas sujas em casa por tipo de peças, por cores para que você possa lavá-las prontamente assim que chegar à lavanderia. Fazer o trabalho de preparação é necessário e irá agilizar o processo.
+                Sim, Lembre-se de organizar as suas roupas sujas em casa por tipo de peças, por cores para que você
+                possa lavá-las prontamente assim que chegar à lavanderia. Fazer o trabalho de preparação é necessário e
+                irá agilizar o processo.
               </p>
             </div>
           </div>
@@ -393,26 +478,33 @@
         <div class="div-missao">
           <img src="imagens/blusa-icon.png" alt="">
           <h1>Missao</h1>
-          <p>Trazer soluções inovadoras e inteligentes com o propósito de ajudar com o sucesso de nossos clientes, com lavagens e secagens de roupas com grande higienização, alinhado a uma qualidade ao atendimento eficiente, no entanto cobrando valores muito justo pelos serviços prestados, e nosso foco com a sustentabilidade do meio ambiente.</p>
+          <p>Trazer soluções inovadoras e inteligentes com o propósito de ajudar com o sucesso de nossos clientes, com
+            lavagens e secagens de roupas com grande higienização, alinhado a uma qualidade ao atendimento eficiente, no
+            entanto cobrando valores muito justo pelos serviços prestados, e nosso foco com a sustentabilidade do meio
+            ambiente.</p>
         </div>
 
         <div class="div-visao">
           <img src="imagens/passador-icon.png" alt="">
           <h1>Visao</h1>
-          <p>Buscamos o reconhecimento de mercado, para isso damos destaque no segmento de lavanderia comercial, queremos nos tornar referência em qualidade e atendimento aos nossos clientes, um ótimo atendimento para proporcionar um relacionamento saudável e respeito com fornecedores, comunidades e os nosso clientes.</p>
+          <p>Buscamos o reconhecimento de mercado, para isso damos destaque no segmento de lavanderia comercial,
+            queremos nos tornar referência em qualidade e atendimento aos nossos clientes, um ótimo atendimento para
+            proporcionar um relacionamento saudável e respeito com fornecedores, comunidades e os nosso clientes.</p>
         </div>
 
         <div class="div-valores">
           <img src="imagens/bolhas-icon.png" alt="">
           <h1>Valores</h1>
-          <p>Transparência, ética, fidelidade, busca continua pela qualidade e valorização do capital humano, nossa responsabilidade com o meio ambiente, sociedade e comunidade.</p>
+          <p>Transparência, ética, fidelidade, busca continua pela qualidade e valorização do capital humano, nossa
+            responsabilidade com o meio ambiente, sociedade e comunidade.</p>
         </div>
-        
+
       </div>
 
     </section>
 
-    <!--Section-Contatos--> <p id="nav-contatos"></p>
+    <!--Section-Contatos-->
+    <p id="nav-contatos"></p>
     <section class="section-contatos">
 
       <h1>Contatos</h1>
@@ -424,7 +516,8 @@
 
           <div class="endereco">
             <h3>Endereço</h3>
-            <p>Av. Santa Leopoldina, 1644 – Dentro da Área do Posto Ipiranga – Em frente aos Correios e Vila do Açaí – Coqueiral de Itaparica – Vila Velha – ES</p>
+            <p>Av. Santa Leopoldina, 1644 – Dentro da Área do Posto Ipiranga – Em frente aos Correios e Vila do Açaí –
+              Coqueiral de Itaparica – Vila Velha – ES</p>
           </div>
 
           <div class="contato">
@@ -445,19 +538,26 @@
 
             <div class="icones-redes">
 
-              <a href="https://www.facebook.com/lavaesecalavanderiavv"><img src="imagens/facebook.png" alt="" width="40px"></a>
-              <a href="https://www.instagram.com/lavaesecalavanderia/"><img src="imagens/logotipo-do-instagram.png" alt="" width="40px"></a>
-              <a href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="imagens/whatsapp.png" alt="" width="40px"></a>
-              <a href="https://maps.app.goo.gl/BfxxP8WnC9aaT6v96"><img src="imagens/fixar-mapa.png" alt="" width="40px"></a>
+              <a href="https://www.facebook.com/lavaesecalavanderiavv"><img src="imagens/facebook.png" alt=""
+                  width="40px"></a>
+              <a href="https://www.instagram.com/lavaesecalavanderia/"><img src="imagens/logotipo-do-instagram.png"
+                  alt="" width="40px"></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img
+                  src="imagens/whatsapp.png" alt="" width="40px"></a>
+              <a href="https://maps.app.goo.gl/BfxxP8WnC9aaT6v96"><img src="imagens/fixar-mapa.png" alt=""
+                  width="40px"></a>
 
             </div>
 
           </div>
-          
+
         </div>
 
         <div class="div-map">
-          <iframe class="mapinha" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.4061532234728!2d-40.3036107!3d-20.3661371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb815b800a05ac7%3A0xc6ca85d7e6ebcad!2sLava%20e%20Seca%20Lavanderia%20Self-Service%20%26%20Servi%C3%A7os%20Convencionais.!5e0!3m2!1spt-BR!2sbr!4v1659561172405!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="mapinha"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.4061532234728!2d-40.3036107!3d-20.3661371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb815b800a05ac7%3A0xc6ca85d7e6ebcad!2sLava%20e%20Seca%20Lavanderia%20Self-Service%20%26%20Servi%C3%A7os%20Convencionais.!5e0!3m2!1spt-BR!2sbr!4v1659561172405!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -465,7 +565,7 @@
 
   </main>
 
-    <!--Section-Footer-->
+  <!--Section-Footer-->
   <footer>
 
     <!--Section-Footes-->
@@ -476,8 +576,9 @@
 
     <section class="section-footer">
 
-      <a href="https://www.lavanderialavaeseca.com.br/"><img src="imagens/Lava e Seca logo.png" alt="" width="120px"></a>
-      
+      <a href="https://www.lavanderialavaeseca.com.br/"><img src="imagens/Lava e Seca logo.png" alt=""
+          width="120px"></a>
+
       <div class="div-menu-footer">
 
         <a href="#nav-sobre" class="link">SOBRE NÓS</a>
@@ -486,18 +587,24 @@
         <a href="#nav-delivery" class="link">DELIVERY</a>
         <a href="#nav-accordion" class="link">FAQ</a>
         <a href="#nav-contatos" class="link">CONTATOS</a>
-          
+
       </div>
 
-      <a href="https://cdn.guiase.net/wp-content/uploads/sites/1894/2022/01/Termos-de-Uso-e-Politicas-de-Privacidade-Lava-e-Seca-Lavanderia-Eireli-2.pdf" class="politica">Política de Privacidade e Termos de Uso</a>
+      <a href="https://cdn.guiase.net/wp-content/uploads/sites/1894/2022/01/Termos-de-Uso-e-Politicas-de-Privacidade-Lava-e-Seca-Lavanderia-Eireli-2.pdf"
+        class="politica">Política de Privacidade e Termos de Uso</a>
 
-      <p style="margin: 0 0 20px; font-size: 14px;">© Lava e Seca Lavanderia 2022. Todos os direitos Reservados.</p>
+      <p style="margin: 0 0 5px; font-size: 14px;">© Lava e Seca Lavanderia 2022. Todos os direitos Reservados.</p>
+      <p style="margin: 0 0 5px; font-size: 14px;">Feito por Dennis Vinicius Freitas Bozzi.</p>
 
       <div class="div-footer">
 
-        <a href="https://www.facebook.com/lavaesecalavanderiavv"><img src="imagens/facebook.png" alt="" width="40px"></a>
-        <a href="https://www.instagram.com/lavaesecalavanderia/"><img src="imagens/logotipo-do-instagram.png" alt="" width="40px"></a>
-        <a href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="imagens/whatsapp.png" alt="" width="40px"></a>
+        <a href="https://www.facebook.com/lavaesecalavanderiavv"><img src="imagens/facebook.png" alt=""
+            width="40px"></a>
+        <a href="https://www.instagram.com/lavaesecalavanderia/"><img src="imagens/logotipo-do-instagram.png" alt=""
+            width="40px"></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5527995801000&text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img
+            src="imagens/whatsapp.png" alt="" width="40px"></a>
         <a href="https://maps.app.goo.gl/BfxxP8WnC9aaT6v96"><img src="imagens/fixar-mapa.png" alt="" width="40px"></a>
 
       </div>
@@ -512,7 +619,7 @@
 
 </body>
 
-  <!--JS-->
-  <script src="js/script.js"></script>
+<!--JS-->
+<script src="js/script.js"></script>
 
 </html>
